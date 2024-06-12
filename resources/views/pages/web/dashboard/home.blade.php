@@ -392,9 +392,12 @@
                 </div>
                 <div id="chatbot-container" class="chatbot-container">
                     <div class="chatbot-header">
-                        <h4>Chatbot SPMB IT Del</h4>
+                        <div class="logo-and-title">
+                            <img class="logodel" src="assets/images/logodel.jpg" alt="">
+                            <h4>Chatbot SPMB IT Del</h4>
+                        </div>
                         <div class="back-to-categories" onclick="backToCategories()">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
                                 <line x1="19" y1="12" x2="5" y2="12"></line>
                                 <polyline points="12 19 5 12 12 5"></polyline>
                             </svg>
