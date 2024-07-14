@@ -59,18 +59,24 @@ function displayMessage(message, sender) {
         profileCircle.classList.add("profile-circle");
         profileCircle.textContent = "C";
 
-        var messageText = document.createElement("p");
-        messageText.textContent = message;
+        var messageText = document.createElement("div");
+        messageText.innerHTML = sanitizeHTML(message);
 
         chatMessage.appendChild(profileCircle);
         chatMessage.appendChild(messageText);
     } else {
-        chatMessage.innerHTML = "<p><strong></strong>" + message + "</p>";
+        chatMessage.innerHTML = "<p><strong></strong>" + sanitizeHTML(message) + "</p>";
     }
 
     chatContent.appendChild(chatMessage);
     chatContent.scrollTop = chatContent.scrollHeight;
 }
+
+function sanitizeHTML(html) {
+    var doc = new DOMParser().parseFromString(html, 'text/html');
+    return doc.body.innerHTML;
+}
+
 
 let currentView = "categories";
 let previousView = "";

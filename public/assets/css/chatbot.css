@@ -222,19 +222,6 @@
     margin-right: 8px;
 }
 
-.admin-message {
-    background-color: #f3f3f3;
-    color: #333;
-    float: left;
-    border-top-left-radius: 0;
-}
-
-.admin-message p {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 10px 15px;
-    max-width: 70%;
-}
 
 .user-message {
     text-align: right;
@@ -243,7 +230,6 @@
 .user-message p {
     background-color: #8e24aa;
     color: white;
-
     border-top-right-radius: 0;
     border-top-left-radius: 10px;
 }

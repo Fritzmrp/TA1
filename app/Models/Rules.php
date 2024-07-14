@@ -8,5 +8,5 @@ class Rules extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['keyword', 'response'];
+    protected $fillable = ['category','keyword', 'response'];
 }
